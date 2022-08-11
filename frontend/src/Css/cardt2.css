@@ -1,0 +1,58 @@
+
+
+  .classT-btn2  {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(148,255,219);
+    background: linear-gradient(90deg, rgba(148,255,219,1) 0%, rgba(185,255,244,1) 15%, rgba(166,221,254,1) 85%, rgba(68,224,255,1) 100%);
+  }
+
+
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: black;
+    background: #ad5389;
+    background:#87dbd0;
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+   }
+   
+   .cssbuttons-io-button svg {
+    margin-right: 6px;
+   }
+   
+   .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+   }
+   
+   .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+   }
+
+   .inputquestion2{
+       width: auto;
+       height: auto;
+       align: center;
+       position: relative;
+       padding: 2px;
+       width: 340px;
+       height: 200px;
+   }
+  .question2{
+      position: relative;
+      display: inline;
+      top: -5px;
+      text-align: center;
+      align-items: center;
+      left: 0px;
+  }

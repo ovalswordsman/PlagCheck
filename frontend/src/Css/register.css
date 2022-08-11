@@ -1,0 +1,70 @@
+.col1 {
+  display: flex;
+  padding: 120px;
+  justify-content: space-around;
+}
+.col1 .row {
+  display: flex;
+  width: calc(100% / 4);
+  border: 1px solid black;
+  height: 100px;
+  background-color: whitesmoke;
+  opacity: 0.7;
+  justify-content: space-around;
+}
+
+.icon {
+  width: calc(100% / 3);
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.data {
+  width: calc(100% / 3);
+  height: 50%;
+  display: grid;
+  margin-top: 15px;
+  margin-left: -100px;
+  font-size: large;
+  font-weight: bold;
+}
+.col2 {
+  position: relative;
+  align-items: center;
+  padding:10px;
+}
+
+.col2 .container {
+  justify-content: space-between;
+  padding: 30px;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  height: 500px;
+}
+.col2 .container h1 {
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+.login2 {
+  width: 70%;
+  padding: 10%;
+  padding-top: 5%;
+}
+
+.forgot {
+  position: absolute;
+  top:70%;
+  height: 120px;
+  width: 140px;
+  right: 0px;
+  color: #fff;
+}
+
+.login__field {
+  padding: 15px 0px;
+  position: relative;
+  font-size: medium;
+}

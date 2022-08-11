@@ -1,0 +1,385 @@
+.classT-btn {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(148,255,219);
+  background: linear-gradient(90deg, rgba(148,255,219,1) 0%, rgba(185,255,244,1) 15%, rgba(166,221,254,1) 85%, rgba(68,224,255,1) 100%);
+}
+
+.classT-btn button {
+  position: relative;
+  font-size: larger;
+  height: 35px;
+   color: white;
+  // color: #B8FFF9;
+  font-weight: 700;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+.classT-btn button:hover {
+  transform: scale(1.2);
+}
+
+.card-item {
+
+  // background:  #B8FFF9;
+  background: rgb(148,255,219);
+  background: linear-gradient(90deg, rgba(148,255,219,1) 0%, rgba(185,255,244,1) 15%, rgba(166,221,254,1) 85%, rgba(68,224,255,1) 100%);
+
+  height:100vh;
+
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 35px;
+  justify-items: center;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  width: 100vw;
+  justify-content: center;
+}
+@media (max-width: 1600px) {
+  .card-item {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (max-width: 1305px) {
+  .card-item {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 1000px) {
+  .card-item {
+    grid-template-columns: auto auto;
+  }
+}
+.cardBox {
+  //   margin-left: 100px;
+  width: 300px;
+  height: 294px;
+  background-color: #fff;
+  border: 0.0625rem solid #dadce0;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  > .cardBoxHeader {
+    position: relative;
+    width: 100%;
+    height: 105px;
+    background-color: #f5f5f5;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.0625rem solid #dadce0;
+    overflow: hidden;
+
+    > .cardBoxImg {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      max-width: max-content !important;
+      background-size: cover;
+      background-position: center;
+    }
+
+    > .cardTitle {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    > div {
+      z-index: 1;
+      padding-left: 20px;
+      color: #e3e3e3;
+    }
+  }
+
+  > .cardBoxBody {
+    // width: 100%;
+    // flex-grow: 1;
+     padding: 0.5rem;
+     padding-left: 20px;
+
+     font-size: 1.5rem;
+      font-weight: bold;
+      color: black;
+
+    position: relative;
+    width: 100%;
+     height: 50%;
+    background-color: #f5f5f5;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.0625rem solid #dadce0;
+     overflow: auto;
+  }
+
+  > .cardBoxFooter {
+    
+    
+    height: 60px;
+    border-top: 0.0625rem solid #dadce0;
+
+  
+
+    font-size: 1.5rem;
+     font-weight: bold;
+     color: black;
+
+    padding: 0.5rem;
+    padding-left: 20px;
+
+    position: relative;
+    width: 100%;
+    // height: 105px;
+    background-color: #f5f5f5;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.0625rem solid #dadce0;
+    overflow: hidden;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%),
+      0 2px 6px 2px rgb(60 64 67 / 15%);
+  }
+}
+
+// Form popup
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  position: absolute;
+  width: 100vw;
+  top: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(73, 73, 73, 0.347);
+  box-shadow: 2px;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 400px;
+  padding: 80px;
+  background-color: white;
+  overflow-y: hidden;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btnjoin {
+  position: relative;
+  left: 0%;
+  background-color: rgb(148,255,219);
+  color: black;
+  padding: 12px 15px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  margin-bottom: 6px;
+  opacity: 0.8;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.btnjoin {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: gray;
+  border-radius: 25px;
+ 
+ }
+
+.btnjoin::before {
+  content: '';
+  width: 0;
+  height: 500%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #C0E218;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .btnjoin:hover::before {
+  width: 105%;
+ }
+ 
+ .btnjoin:hover {
+  color: #111;
+ }
+
+/* Add a red background color to the cancel button */
+// .form-container .cancel {
+  // background-color: gray;
+  .cancel {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: gray;
+   }
+
+  .cancel::before {
+    content: '';
+    width: 0;
+    height: 500%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: gray;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .cancel:hover::before {
+    width: 105%;
+   }
+   
+   .cancel:hover {
+    color: #111;
+   }
+
+
+//}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+
+.noselect {
+  position: absolute;
+  left: 65%;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+  background: #B91646;
+ }
+ 
+ .noselect, .noselect span {
+  transition: 200ms;
+ }
+ 
+ .noselect .text {
+  transform: translateX(25px);
+  color: white;
+  font-weight: bold;
+ }
+ 
+ .noselect .icon {
+  position: absolute;
+  // border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+ }
+ 
+ .noselect svg {
+  width: 15px;
+  fill: #eee;
+ }
+ 
+ .noselect:hover {
+  background: #ff3636;
+ }
+ 
+ .noselect:hover .text {
+  color: transparent;
+ }
+ 
+ .noselect:hover .icon {
+  width: 100px;
+  border-left: none;
+  transform: translateX(0);
+ }
+ 
+ .noselect:focus {
+  outline: none;
+ }
+ 
+ .noselect:active .icon svg {
+  transform: scale(0.8);
+ }

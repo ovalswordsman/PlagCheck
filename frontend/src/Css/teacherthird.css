@@ -1,0 +1,101 @@
+.teacher-assignment{
+    
+    min-height: 170vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(148,255,219);
+    background: linear-gradient(90deg, rgba(148,255,219,1) 0%, rgba(185,255,244,1) 15%, rgba(166,221,254,1) 85%, rgba(68,224,255,1) 100%);
+}
+
+.question2{
+    display:inline-block;
+    position: relative;
+    top: 6vh;
+    left: 15%;
+    background-color: white;
+    width: 70em;
+    max-height:40vh;
+   
+    border-radius:10px 10px 10px 10px;
+    padding: 10px;
+    text-align: left;
+    overflow: auto;
+}
+
+.scan4{
+    position: absolute;
+    left: 65%;
+    top: 35vh;
+}
+.scan4 {
+    position: absolute;
+    width: 312px;
+    height: 72px;
+    
+    z-index: 1;
+  
+    background: linear-gradient(-45deg, rgba(78, 223, 255, 0.47), #004360, #27c8b7, rgba(78, 223, 255, 0.47));
+    background-size: 800% 400%;
+    padding: 1em 2em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+   }
+   
+   .scan4:hover {
+    animation: gradient 3s infinite;
+    transform: scale(1.05);
+   }
+   
+   .scan4:active {
+    animation: gradient 3s infinite;
+    transform: scale(0.8);
+   }
+   
+.reportteacher{
+display: inline-block;
+    width: 350px;
+    position: absolute;
+ left: 65%;
+ top: 65%;
+ background-color: azure;
+ padding: 10px;
+ border-radius: 10px;
+ font-size: large;
+}
+.solutionlist{
+margin: 5px;
+ display:block;
+ position: relative;
+ top: 13vh;
+ left: 14.5%;
+ background-color: white;
+ max-width: 44em;
+ max-height:30vh;
+ 
+ border-radius:10px 10px 10px 10px;
+ padding: 10px;
+ text-align: left;
+ font-size: medium;
+ padding: 5px;
+ overflow: auto;
+}
+.solutionroll{
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+}  
+.solutionfname{
+    display: inline;
+    position: relative;
+    left: 80%;
+    font-weight: bold;
+}
+.solutioncontent{
+    padding-left: 10px;
+}

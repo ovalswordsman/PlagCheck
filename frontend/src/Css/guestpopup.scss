@@ -1,0 +1,151 @@
+.guestPopup{
+    width: max-content;
+    max-width: 1200px;
+    min-width: 500px;
+    max-height: 600px;
+    min-height: 400px;
+    position: absolute;
+    top:50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px #cecece;
+    padding-right: 30px;
+    // max-height: 500px;
+    overflow: auto;
+    line-height: 120%;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+
+    >div{
+        
+        >.grammerTitle{
+            margin: 2px;
+            border-bottom: 1px solid rgb(185, 185, 185);
+            background-color: #06c3d0cf;
+            background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+            // display: flex;
+            align-items: center;
+            text-align: center;
+            padding-left: 30px;
+            height: 40px;
+            font-weight: 500;
+            font-size: 18px;
+            padding-top: 10px;
+            font-weight: bolder;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        >.grammerBody{
+            >.grammerBodyTitle{
+               
+                display: flex;
+                align-items: center;
+                text-align: center;
+                 padding-left: 10px;
+                height: 40px;
+                font-weigth: bolder;
+                padding-top: 10px;
+               
+            }
+
+            >.grammerDesc{
+                >.grammerDescTitle{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 20px;
+                    height: 40px;
+                    
+                    >div{
+                        padding: auto 30px;
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+                }
+
+                >.grammerDescBody{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 30px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    
+
+    >.close {
+        
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+        cursor: pointer;
+      }
+      >.close:hover {
+        color: #f24f4f;
+      }
+
+
+}
+
+.plagTitle{
+    background-color: #06c3d0cf;
+background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+}
+
+.plagBody{
+    margin: 5px;
+    padding: 5px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    border-radius: 5px 5px 0px 0px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    // border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
